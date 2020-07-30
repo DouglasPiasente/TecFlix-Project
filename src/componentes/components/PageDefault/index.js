@@ -1,7 +1,8 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
-import Menu from '../../Menu'
-import Footer from '../Footer'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import Menu from '../../Menu';
+import Footer from '../Footer';
 
 const Main = styled.main`
     background-color: var(--black);
@@ -12,16 +13,16 @@ const Main = styled.main`
     padding-left: 5%;
     `;
 
-function PageDefault({children}) {
-    return (
-        <>
-            <Menu />
-                <Main>
-                {children}
-                </Main>
-            <Footer />
-        </>
-    );
+function PageDefault({ children }) {
+  return (
+    <>
+      <Menu />
+      <Main>
+        {children}
+      </Main>
+      <Footer />
+    </>
+  );
 }
 
 export default PageDefault;
